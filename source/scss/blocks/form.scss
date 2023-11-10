@@ -152,22 +152,18 @@
     flex-grow: 0;
   }
   .form__field {
-    transition: width 0.3s linear, padding 0.4s ease-out;
-    transition-delay: 0.2s;
+    transition: width 0.3s ease-out 0.2s;
     width: 0;
     margin-left: auto;
-    padding: 0 0;
 
     .screen.active & {
       width: calc(100% - 21rem);
 
       @media (min-width: $stop-scaling) {
-        padding: 0 56px;
         width: calc(100% - 210px);
       }
 
       @media (orientation: portrait) {
-        padding: 0 2.5rem;
         width: calc(100% - 5rem);
       }
 
@@ -176,7 +172,6 @@
       }
 
       @media (max-width: $mobile) and (orientation: landscape) {
-        padding: 0 2.5rem;
         width: calc(100% - 5rem);
       }
     }
