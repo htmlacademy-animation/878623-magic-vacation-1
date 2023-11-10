@@ -16,12 +16,12 @@
 .swiper-slide {
   &-active, &-next {
    .slider__item-text {
-     animation: fade-in 0.3s ease-in-out 0.3s forwards;
+     animation: fade-in-top 0.3s ease-in-out 0.3s forwards;
    }
   }
 }
 
-@keyframes fade-in {
+@keyframes fade-in-top {
   from {
     opacity: 0;
     transform: translateX(20px);
